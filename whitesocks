@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>White Socks Store</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; background: #f5f5f5; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        .socks { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+        .sock { background: white; margin: 10px; padding: 15px; width: 250px; text-align: center; box-shadow: 0 0 10px #ddd; }
+        .sock img { width: 100%; height: 200px; object-fit: cover; }
+        button { background: #333; color: white; border: none; padding: 10px; cursor: pointer; width: 100%; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>White Socks Store</h1>
+        <p>Ankle · Mid · High</p>
+    </header>
+
+    <div class="socks">
+        <div class="sock">
+            <img src="https://via.placeholder.com/250x200?text=Ankle+Socks" alt="Ankle Socks">
+            <h3>White Ankle Socks</h3>
+            <p>$9.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="sock">
+            <img src="https://via.placeholder.com/250x200?text=Mid+Socks" alt="Mid Socks">
+            <h3>White Mid Socks</h3>
+            <p>$12.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="sock">
+            <img src="https://via.placeholder.com/250x200?text=High+Socks" alt="High Socks">
+            <h3>White High Socks</h3>
+            <p>$14.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 White Socks Store</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to cart! (Demo)');
+            });
+        });
+    </script>
+</body>
+</html>
